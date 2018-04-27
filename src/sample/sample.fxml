@@ -7,9 +7,10 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="270.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
    <children>
-      <Button fx:id="downloadButton" layoutX="258.0" layoutY="175.0" mnemonicParsing="false" onAction="#clicked" text="Pobierz stronę" />
-      <TextField fx:id="urlTextField" layoutX="137.0" layoutY="111.0" prefHeight="25.0" prefWidth="335.0" />
-      <Label layoutX="139.0" layoutY="86.0" text="Podaj URL strony" />
-      <Label fx:id="wynikLabel" layoutX="73.0" layoutY="220.0" prefHeight="17.0" prefWidth="464.0" />
+      <Button fx:id="downloadButton" layoutX="259.0" layoutY="110.0" mnemonicParsing="false" onAction="#clicked" text="Pobierz stronę" />
+      <TextField fx:id="urlTextField" layoutX="138.0" layoutY="61.0" prefHeight="25.0" prefWidth="335.0" text="http://www.example.com" />
+      <Label layoutX="138.0" layoutY="38.0" text="Podaj URL strony" />
+      <Label fx:id="wynikLabel" layoutX="74.0" layoutY="204.0" prefHeight="17.0" prefWidth="464.0" />
+      <Label fx:id="statusLabel" layoutX="74.0" layoutY="161.0" prefHeight="17.0" prefWidth="172.0" />
    </children>
 </AnchorPane>

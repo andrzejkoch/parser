@@ -14,10 +14,12 @@ public class Controller {
     @FXML
     Label wynikLabel;
     @FXML
+    Label statusLabel;
+    @FXML
     void clicked () throws IOException {
-        System.out.println("klikn");
+        System.out.println("kliknięcie");
         //wynikLabel.setText("Wpisałeś: " +urlTextField.getText());
-        String Url = "http://www.wp.pl/";
+        //String Url = "http://www.wp.pl/";
         Document doc = null;
         try {
             doc = Jsoup.connect(urlTextField.getText()).get();
@@ -25,6 +27,7 @@ public class Controller {
             e.printStackTrace();
         }
         String title = doc.title();
-        wynikLabel.setText("Tytuł tej strony to: " +title);
+        statusLabel.setText("Połączenie udane");
+        wynikLabel.setText("Tytuł podanej strony to: " +title);
     }
 }
